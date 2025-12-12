@@ -1,0 +1,65 @@
+name: aquatrack
+description: "AquaTrack - Your Daily Water Intake Tracker"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+  
+  # Local Storage
+  shared_preferences: ^2.3.2
+  sqflite: ^2.3.3+1
+  path_provider: ^2.1.4
+  path: ^1.9.0
+  
+  # Notifications
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+  permission_handler: ^11.3.1
+  
+  # Charts & Visualization
+  fl_chart: ^0.69.0
+  
+  # UI Components
+  flutter_svg: ^2.0.10+1
+  shimmer: ^3.0.0
+  
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.5.1
+  
+  # Animations
+  flutter_animate: ^4.5.0
+  lottie: ^3.1.2
+  
+  # Icons
+  cupertino_icons: ^1.0.8
+  iconsax: ^0.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  riverpod_generator: ^2.4.3
+  build_runner: ^2.4.12
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+  
+  # Fonts removed temporarily because the font files are not present in
+  # `assets/fonts/`. Re-add this section after placing the Poppins font
+  # files into `assets/fonts/`.
+
